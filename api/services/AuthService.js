@@ -38,13 +38,13 @@ class AuthService {
             Notifications.createChannelAndroidAsync('signup-status-changed', {
                 name: 'Påmeldingsstatus endret',
                 priority: 'max',
-                description: "Motta varsel om din påmeldingsstatus til et arrangement blir endret",
+                description: "Motta varsel hvis din påmeldingsstatus til et arrangement blir endres",
                 sound: true,
             });
             Notifications.createChannelAndroidAsync('announcements', {
                 name: 'Annonseringer',
                 priority: 'max',
-                description: "Motta annonseringer fra TIHLD",
+                description: "Motta annonseringer fra TIHLDE",
                 sound: true,
             });
         }
