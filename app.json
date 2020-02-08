@@ -8,12 +8,12 @@
       "ios",
       "android"
     ],
-    "version": "0.9.1",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {
       "image": "./assets/images/tihlde_splash.png",
-      "resizeMode": "cover",
+      "resizeMode": "contain",
       "backgroundColor": "#1D448C"
     },
     "updates": {
@@ -37,14 +37,18 @@
       "package": "org.tihlde.tihlde",
       "permissions": [
         "CAMERA"
-      ]
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/tihlde_logo_foreground.png",
+        "backgroundColor": "#1D448C"
+      }
     },
     "description": "TIHDLE's egen app! Her kan du melde deg av og på arrangementer, samt bruke medlemsbeviset til å komme raskere inn på våre arrangementer.",
     "backgroundColor": "#ffffff",
     "primaryColor": "#1D448C",
     "scheme": "tihlde",
     "notification": {
-      "icon": "./assets/images/icon_96.png",
+      "icon": "./assets/images/tihlde_logo_gray.png",
       "color": "#000000",
       "iosDisplayInForeground": true,
       "androidMode": "default"
