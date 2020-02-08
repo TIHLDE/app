@@ -25,6 +25,7 @@
       "./assets/images/*"
     ],
     "ios": {
+      "buildNumber": 2,
       "bundleIdentifier": "org.tihlde.tihlde",
       "supportsTablet": true,
       "requireFullScreen": false,
@@ -34,6 +35,7 @@
       "icon": "./assets/images/icon_ios.png"
     },
     "android": {
+      "versionCode": 2,
       "package": "org.tihlde.tihlde",
       "permissions": [
         "CAMERA"
