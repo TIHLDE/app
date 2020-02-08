@@ -25,7 +25,7 @@
       "./assets/images/*"
     ],
     "ios": {
-      "buildNumber": 2,
+      "buildNumber": "2",
       "bundleIdentifier": "org.tihlde.tihlde",
       "supportsTablet": true,
       "requireFullScreen": false,
