@@ -25,18 +25,26 @@ class AuthService {
         if (Platform.OS === 'android') {
             Notifications.createChannelAndroidAsync('new-event', {
                 name: 'Nytt arrangement',
+                priority: 'max',
+                description: "Motta varsel når vi publiserer et nytt arrangement",
                 sound: true,
             });
             Notifications.createChannelAndroidAsync('event-signup-start', {
                 name: 'Arrangementspåmelding åpnet',
+                priority: 'max',
+                description: "Motta varsel påmeldingen til arrangementer åpner",
                 sound: true,
             });
             Notifications.createChannelAndroidAsync('signup-status-changed', {
                 name: 'Påmeldingsstatus endret',
+                priority: 'max',
+                description: "Motta varsel hvis din påmeldingsstatus til et arrangement blir endres",
                 sound: true,
             });
             Notifications.createChannelAndroidAsync('announcements', {
                 name: 'Annonseringer',
+                priority: 'max',
+                description: "Motta annonseringer fra TIHLDE",
                 sound: true,
             });
         }

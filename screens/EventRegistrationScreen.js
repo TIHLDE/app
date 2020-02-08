@@ -114,7 +114,7 @@ export default class EventRegistrationScreen extends Component {
                   value={this.state.userName}
                   returnKeyType = { "go" }
                   onChangeText={(text) => this.setState(state => { return { ...state, userName: text }; })}
-                  onSubmitEditing={() => { this.allergyInput.focus(); }}
+                  onSubmitEditing={() => { this.registrate(); }}
                   blurOnSubmit={false}
                 />
                 <TihldeButton
