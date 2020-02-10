@@ -1,4 +1,4 @@
 export default {
-  publishVersion: 11,
+  publishVersion: 12,
   accessToken: 'access__token',
 };
