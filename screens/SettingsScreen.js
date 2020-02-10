@@ -47,7 +47,7 @@ export default class SettingsScreen extends Component {
                 <Caption style={styles.categoryHeader}>Generelt</Caption>
                 <ActionButton text="TIHLDE.org" action={() => Linking.openURL('https://tihlde.org')} />
                 <ActionButton text="Hjelp" action={() => Linking.openURL('https://m.me/tihlde')} />
-                <ActionButton text="Personvern" action={() => Linking.openURL('https://tihlde.org')} />
+                <ActionButton text="Personvern" action={() => Linking.openURL('https://tihlde.org/personvern/')} />
                 <ActionButton text="Logg ut" action={() => AuthService.logOut(this.props.navigation)} />
               </View>
             </View>
