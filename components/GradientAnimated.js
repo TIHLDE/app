@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Animated, Easing } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
-import { Image, View } from 'react-native';
+import { Image, View, Clipboard, TouchableWithoutFeedback } from 'react-native';
 
 import Colors from '../constants/Colors';
 
@@ -37,14 +37,16 @@ export default class GradientAnimated extends Component {
 
         return (
             <LinearGradient locations={[0.0, 0.65]} colors={[Colors.linearGradientTop, Colors.linearGradientBottom]} style={styles.linearGradient}>
+              <TouchableWithoutFeedback onPress={() => Clipboard.setString('@olros')}>
                 <View style={styles.imgContainer}>
                     <Image source={require('../assets/images/TIHLDE_LOGO.png')} style={styles.logo}/>
                 </View>
-                <View style={styles.waveContainer}>
-                    <Animated.Image source={require('../assets/images/wave-top.png')} style={[styles.waveImg, styles.waveTop, topAni]}/>
-                    <Animated.Image source={require('../assets/images/wave-mid.png')} style={[styles.waveImg, styles.waveMid, midAni]}/>
-                    <Animated.Image source={require('../assets/images/wave-bot.png')} style={[styles.waveImg, styles.waveBot, botAni]}/>
-                </View>
+              </TouchableWithoutFeedback>
+              <View style={styles.waveContainer}>
+                  <Animated.Image source={require('../assets/images/wave-top.png')} style={[styles.waveImg, styles.waveTop, topAni]}/>
+                  <Animated.Image source={require('../assets/images/wave-mid.png')} style={[styles.waveImg, styles.waveMid, midAni]}/>
+                  <Animated.Image source={require('../assets/images/wave-bot.png')} style={[styles.waveImg, styles.waveBot, botAni]}/>
+              </View>
             </LinearGradient>
         )
     }
